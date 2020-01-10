@@ -29,7 +29,6 @@ Desktop (right away), you could also call it via an ordinary web browser.
 ## More
 
 For even more information (screenshots, installation instructions and
-so on) take a look at the [KDE store](https://store.kde.org/p/1002159/).
-Be aware that this particular page loads extremely slowly -- perhaps some
-[indirection](https://store.kde.org/browse/cat/106/page/20/ord/rating/)
-might help you out.
+so on) take a look at the [KDE store](https://store.kde.org/p/1002159/)!
+
+[_Wake up, Neo..._](https://cdn.pling.com/img//hive/content-pre2/120087-2.jpg)
