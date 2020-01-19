@@ -12,7 +12,7 @@
  *   WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  *   or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
  *   more details.
- * 
+ *
  *   You should have received a copy of the GNU General Public License along with
  *   this program; if not, see <http://www.gnu.org/licenses/>.
  */
@@ -22,7 +22,7 @@ var label1 = null;
 
 label1 = new Label
 
-//plasmoid.hasConfigurationInterface = false;
+// plasmoid.hasConfigurationInterface = false;
 plasmoid.aspectRatioMode = IgnoreAspectRatio;
 
 var urlWithParameters = "";
@@ -89,29 +89,12 @@ var readConfigurationData = function(){
 
 	showFrame   = plasmoid.readConfig("showFrame");
 
-/*
-	debugString += "startMessage: " + startMessage + "\n";
-	debugString += "stopMessage: " + stopMessage + "\n";
-	debugString += "matrixSpeed: " + matrixSpeed + "\n";
-	debugString += "matrixString: " + matrixString + "\n";
-	debugString += "threeDEffect: " + threeDEffect + "\n";
-	debugString += "wakeUpToStart: " + wakeUpToStart + "\n";
-	debugString += "showMonitor: " +  showMonitor+ "\n";
-	debugString += "transparency: " + transparency + "\n";
-	debugString += "customColorSettings: " + customColorSettings + "\n";
-	debugString += "customCharacterColor: " + customCharacterColor + "\n";
-	debugString += "customBackgroundColor: " + customBackgroundColor + "\n";
-	debugString += "showFrame: " + showFrame + "\n\n";
-
-	label1.text = i18n( debugString )
-*/
 	if ( showFrame == true ) {
 		plasmoid.backgroundHints = DefaultBackground;
-		
 	} else {
 		plasmoid.backgroundHints = NoBackground;
 	}
-	
+
 	return getUrlWithParameters( matrixSpeed, maxSpeed, startMessage, stopMessage, matrixString, threeDEffect, wakeUpToStart, showMonitor, customColorSettings, customCharacterColor, customBackgroundColor, transparency );
 }
 
@@ -173,7 +156,7 @@ var getUrlWithParameters = function ( matrixSpeed, maxSpeed, startMessage, stopM
 
 	if( customColorSettings == true ) {
 		tempUrl = Url( plasmoid.file("scripts", "mainCustom.html" ) );
-		urlString = tempUrl.toString 
+		urlString = tempUrl.toString
 			+ "?speed="        + matrixSpeed
 			+ "&s_max="        + maxSpeed
 			+ "&m_start="      + startMessage
@@ -188,7 +171,7 @@ var getUrlWithParameters = function ( matrixSpeed, maxSpeed, startMessage, stopM
 			+ "&string="       + matrixString;
     } else {
 		tempUrl = Url( plasmoid.file("scripts", "main.html" ) );
-		urlString = tempUrl.toString 
+		urlString = tempUrl.toString
 			+ "?speed="        + matrixSpeed
 			+ "&s_max="        + maxSpeed
 			+ "&m_start="      + startMessage
@@ -199,19 +182,9 @@ var getUrlWithParameters = function ( matrixSpeed, maxSpeed, startMessage, stopM
 			+ "&custom_color_settings=false"
 			+ "&string="       + matrixString;
     }
-    
-    /*
-      debugString = customCharacterColor + " " + customBackgroundColor + " " + urlString;
-      if( label1 ) {
-          label1.text = i18n( debugString );
-      }
-    */
-    
+
     return Url( urlString );
 }
-
-
-//urlWithParameters = readConfigurationData();
 
 layout      = new LinearLayout(plasmoid);
 webView     = new WebView();
@@ -224,12 +197,9 @@ webView.url = urlWithParameters;
 layout.addItem(webView);
 
 plasmoid.configChanged = function() {
-	//read out new config data
+	// read out new config data
 	urlWithParameters = readConfigurationData();
 
-	//"restart" the webView
+	// "restart" the webView
 	webView.url = urlWithParameters;
 }
-
-//layout.addItem(label1)
-

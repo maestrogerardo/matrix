@@ -12,18 +12,16 @@
  *   WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  *   or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
  *   more details.
- * 
+ *
  *   You should have received a copy of the GNU General Public License along with
  *   this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
 body {
-    /*background-color: #000000;*/
     margin: 0;
     padding: 0;
     border: 0;
     overflow: hidden;
-	/*opacity:0.4;*/
 }
 
 #canvas {
@@ -40,7 +38,7 @@ body {
 }
 
 #monitor {
-	z-index: 200000;
+    z-index: 200000;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -49,7 +47,7 @@ body {
 }
 
 #monitor img {
-	z-index: 200000;
+    z-index: 200000;
     position: absolute;
     top: 0px;
     left: 0px;

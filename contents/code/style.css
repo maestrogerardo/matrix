@@ -12,7 +12,7 @@
  *   WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  *   or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
  *   more details.
- * 
+ *
  *   You should have received a copy of the GNU General Public License along with
  *   this program; if not, see <http://www.gnu.org/licenses/>.
  */
@@ -40,7 +40,7 @@ body {
 }
 
 #monitor {
-	z-index: 200000;
+    z-index: 200000;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -49,7 +49,7 @@ body {
 }
 
 #monitor img {
-	z-index: 200000;
+    z-index: 200000;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -74,12 +74,10 @@ body {
 }
 
 #canvas span.future {
-/*     color: #040d00; */
     color: transparent;
 }
 
 #canvas span.dead {
-/*     color: #061800; */
     color: transparent;
 }
 
@@ -97,11 +95,9 @@ body {
 }
 
 #canvas span.future.mini {
-/*     color: #000000; */
 }
 
 #canvas span.dead.mini {
-/*     color: #000000; */
 }
 
 #canvas span.nearlyDead.mini {
@@ -118,11 +114,9 @@ body {
 }
 
 #canvas span.future.tiny {
-/*     color: #020800; */
 }
 
 #canvas span.dead.tiny {
-/*     color: #040d00; */
 }
 
 #canvas span.nearlyDead.tiny {
