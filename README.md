@@ -12,7 +12,7 @@ _beast_ could make your computer explode.
 It could look like
 [this](http://maestrogerardo.com/foo/matrix/extra/html/crazy.html),
 [that](http://maestrogerardo.com/foo/matrix/extra/html/insane.html) or
-[sth.](http://maestrogerardo.com/foo/matrix/contents/code/main.html?effect_3d=true)
+[sth.](https://cdn.pling.com/img//hive/content-pre2/120087-2.jpg)
 else...
 
 ## History
@@ -31,4 +31,4 @@ Desktop (right away), you could also call it via an ordinary web browser.
 For even more information (screenshots, installation instructions and
 so on) take a look at the [KDE store](https://store.kde.org/p/1002159/)!
 
-[_Wake up, Neo..._](https://cdn.pling.com/img//hive/content-pre2/120087-2.jpg)
+[_Wake up, Neo..._](https://cdn.pling.com/img//hive/content-pre3/120087-3.png)
